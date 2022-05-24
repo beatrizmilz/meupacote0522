@@ -1,5 +1,16 @@
-
-media_vol <- function(base, reservoir, year = 2022, month = 4) {
+#' Calcular media do volume
+#'
+#' Essa funcao calcula a media de volume (%) armazenado ...
+#'
+#' @param reservoir nome do reservatorio, em texto
+#' @param year ano em numero
+#' @param month mes em numero
+#'
+#' @return uma tibble
+#' @export
+#'
+#' @examples media_vol("Cantareira")
+media_vol <- function(reservoir, year = 2022, month = 4) {
   "https://git.io/JOLeb" %>%
     readr::read_csv2() %>%
     dplyr::mutate(ano = lubridate::year(data), mes = lubridate::month(data)) %>%
