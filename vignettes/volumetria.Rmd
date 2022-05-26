@@ -1,0 +1,26 @@
+---
+title: "volumetria"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{volumetria}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(meupacote0522)
+```
+
+Minha explicação longa sobre o pacote é
+
+```{r}
+media_vol("Cantareira")
+```
+
