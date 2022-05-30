@@ -2,7 +2,7 @@ test_that("media_vol() funciona", {
 
   resultado_cantareira <- media_vol("Cantareira")
 
-  expect_equal(nrow(resultado_cantareira), 1)
+  expect_equal(nrow(resultado_cantareira), 2)
 
   expect_s3_class(resultado_cantareira, "tbl_df")
 
